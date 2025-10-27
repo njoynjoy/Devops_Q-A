@@ -68,18 +68,14 @@ In a nutshell terraform is our single source of truth or single point of contact
 ```	Have herad of opentofu ? do you think it is better than terraform? ```
 Both terraform and opentofu share there root, opentofu is created from terraform, It was created from terraform because of the licensing change from terraform. In our organization we just use terraform to create infrastructure and selling it
 
-
-
-
-
-
-```	Write a Terraform code to create any resource on aWS? ```
+	``` Write a Terraform code to create any resource on AWS? ``` 
 Will create the terraform block first and download the required providers and will intiliazes the providers Instead of hardcoding the value I will use variable.tf file and if the resource block based on the resource will create the file examples3.tf, ec2.tf like wise if it is small will create in the main.tf itself.
 Resource block syntax
 Resource “----” ‘—‘{
 ----
 ----	
 }
+
 <img width="358" height="352" alt="image" src="https://github.com/user-attachments/assets/e28f3696-a87b-42df-9bc9-2eb16d117cdc" />
  
 
