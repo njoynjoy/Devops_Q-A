@@ -23,13 +23,18 @@ Login to instance—
 cd /var      
 cd log
 sudo du -sh * -- gives space occupied by each folder 
+<img width="270" height="195" alt="image" src="https://github.com/user-attachments/assets/6aac0054-091d-44c3-a89a-3bfe91dab682" />
+
  
 ``` 	In Linux virtual machine production is slow due to high CPU utilization? ```
 Login to instance
 Check top or htop which is installed in the machine we will get list of resources running  with PID
 Take the PID and execute kill, nice or renice commands
 Kill—to kill the process, nice or renice to prioritize the process in cpu so that it will take less priority in cpu so that it can give that to other resources
-  
+  <img width="270" height="195" alt="image" src="https://github.com/user-attachments/assets/04b2b5bd-7021-4d14-b6f8-d28d6f426d9b" />
+  <img width="270" height="195" alt="image" src="https://github.com/user-attachments/assets/b3db9c3e-b51c-440e-874c-1cf64348585c" />
+
+
 
 ```	Application deployed in Nginx returns an error of connection refused. How to fix it ```
 Error 502 : a request sent from Nginx, but the application is not able to communicate back to Nginx.
@@ -37,7 +42,8 @@ Error 404: then it should be issued with location and configuration of the appli
 For this the connection is refused check first if the Nginx is running or not. To check 
 systemctl status nginx
 here checking for docker service
- 
+ <img width="975" height="126" alt="image" src="https://github.com/user-attachments/assets/2ae0bfba-9ae9-4b00-a7bf-d4019fc3ff44" />
+
  After the nginix is running still the connection is refused. Then we will check the firewall. If it is a cloud instance, we will check the security group followed by inbound traffic rules.
 
 ```	SSH plan instance phase.```
@@ -46,15 +52,18 @@ here checking for docker service
 3.	Check any firewall on the virtual machine. (disable)
 4.	Security group on the cloud instance – make sure port 22 is opened for inbound traffic.
 5.	Sshd or ssh process might have stopped
- 
+ <img width="975" height="163" alt="image" src="https://github.com/user-attachments/assets/10612fd6-42a7-4d4b-a191-90ae13d0f96b" />
+
 
 ```	Find and list log files that are older than 7 days in /var/log directory ```
 We will use the `find` command to find the logs. After the `find` command, we will go to that particular directory so that type we are defining whether it was a file or directory. Here we are using the file name, so -type f. After that -name, we need to provide the name of the files we need. Since we don't know the name, we are giving *.log as we are checking the log files. And also we need the older than 7 days files. So we will be giving -mtime + 7
 sudo find /var/log -type f -name '*.log' -mtime +7
- 
+ <img width="975" height="134" alt="image" src="https://github.com/user-attachments/assets/902b3859-a988-4df3-b4c3-22f39ded1f62" />
+
 So we want to list all the details of the files that are older than 7 days. We will be using           -exec that is used with find, whatever the output of the find command that will be replace by  the {} here we are using ls -ltr  we can use rm -rf, mv , gzip to zip the files like wise..
 sudo find /var/log/ -type f -name ‘*.log’ -mtime +7 -exec ls -ltr {} \;
- 
+ <img width="975" height="135" alt="image" src="https://github.com/user-attachments/assets/5ed469ff-62d7-4dc8-8511-d38dd953cd31" />
+
 
 
 
@@ -64,7 +73,8 @@ sudo find /var/log/ -type f -name ‘*.log’ -mtime +7 -exec ls -ltr {} \;
 
 ```	 How to find and remove log files that are older than 7 days? ```
 sudo find /var/log -type f -name “*.log” -mtime +7 -exec rm  {} \;
- 
+ <img width="985" height="181" alt="image" src="https://github.com/user-attachments/assets/6b26c312-5b23-41ee-b9b0-5651104f0238" />
+
 
 ```	Log Rotation ```
 Scenario: “your application writes the logs in /var/ log/my app.
@@ -76,6 +86,7 @@ Automate this via a cron job daily”
 3-- again use the `find` command for deleting the logs older than 30 days.
 4-- for record purposes, like on this particular data log, whether the log rotation has been successful or not will be kept a record.
  
+<img width="975" height="250" alt="image" src="https://github.com/user-attachments/assets/0e1b0376-32fd-4218-863e-22ebbab04404" />
 
 
 
@@ -111,7 +122,9 @@ done
 services (“nginx “ “ssh” “docker”)
 Interviewer has provided this and told you to check whether the service is running or not. If not, restart the service.
 We can see the services are given in a string format. Change the string format to our desired output. We'll be using ${services[@]}
- 
+<img width="975" height="31" alt="image" src="https://github.com/user-attachments/assets/e0eecc10-3514-4ed8-bb4e-68277f05b4b6" />
+ <img width="975" height="99" alt="image" src="https://github.com/user-attachments/assets/00b78269-d650-4834-afcb-eaa41c04504e" />
+
  
 #!/bin/bash
 services=("nginx" "ssh" "docker")
@@ -128,6 +141,7 @@ for service in "${services[@]}"; do
                 fi
         fi
 done
+<img width="625" height="395" alt="image" src="https://github.com/user-attachments/assets/afda4581-1d6f-46e7-9401-4b88594af7e5" />
  
 
 ```	How to find and delete files over 100 MB? ```
@@ -155,4 +169,5 @@ If she is not to print on the terminal, then
 sed -I ‘1d;$d’
 $d – represents last line of the file.
  
+<img width="626" height="412" alt="image" src="https://github.com/user-attachments/assets/1582eb1e-620d-4782-9dcc-8ba4433c471c" />
 
