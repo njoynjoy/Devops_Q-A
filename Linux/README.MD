@@ -12,20 +12,21 @@ chmod/chown: for changing permission and right people having the permission
 scp/rsync: to copy the files from my local linux machine to cloud instance
 find: to locate particular file in the directory 
 
-	You lost a PEM file, how could you connect to the cloud instance?
+```	You lost a PEM file, how could you connect to the cloud instance? ```
 PEM file holds the private key for the cloud instance. And private key to the instances
 For ssh we need either password or private key
 ssh-keygen -t rsa generate the public and private keys, copy the public key in authorized keys folder and copy the private key to local and change the permission to chmod 400 and try connecting ssh -i <private key> user@instanceip
 
-	/var is almost 90% full. What will you do?
+```	/var is almost 90% full. What will you do? ```
 /var is the place where the services write the log files like apache
 Login to instance—
 cd /var      
 cd log
 sudo du -sh * -- gives space occupied by each folder
+
  
 
-	In Linux virtual machine production is slow due to high CPU utilization?
+``` 	In Linux virtual machine production is slow due to high CPU utilization? ```
 Login to instance
 Check top or htop which is installed in the machine we will get list of resources running  with PID
 Take the PID and execute kill, nice or renice commands
