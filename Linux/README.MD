@@ -22,7 +22,7 @@ ssh-keygen -t rsa generate the public and private keys, copy the public key i
 Login to instance—
 cd /var      
 cd log
-sudo du -sh * -- gives space occupied by each folder
+sudo du -sh * -- gives space occupied by each folder 
  
 ``` 	In Linux virtual machine production is slow due to high CPU utilization? ```
 Login to instance
