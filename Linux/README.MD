@@ -1,5 +1,6 @@
 LINUX
-	10 Linux commands that we use in daily basis?
+
+``` 10 Linux commands that we use in daily basis? ```
 ls: with ls, I pass the parameters like -a -l -ltr
 cd: to switch the directories
 cat, less, tail: to read the logs
