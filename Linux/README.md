@@ -31,9 +31,7 @@ Login to instance
 Check top or htop which is installed in the machine we will get list of resources running  with PID
 Take the PID and execute kill, nice or renice commands
 Kill—to kill the process, nice or renice to prioritize the process in cpu so that it will take less priority in cpu so that it can give that to other resources
-  <img width="270" height="195" alt="image" src="https://github.com/user-attachments/assets/04b2b5bd-7021-4d14-b6f8-d28d6f426d9b" />
-  <img width="270" height="195" alt="image" src="https://github.com/user-attachments/assets/b3db9c3e-b51c-440e-874c-1cf64348585c" />
-
+ <img width="626" height="412" alt="image" src="https://github.com/user-attachments/assets/f682c92b-66f2-4f8e-8249-58d7b26f98ab" /> <img width="626" height="412" alt="image" src="https://github.com/user-attachments/assets/f07cf5e8-c6ac-4e1f-8454-7e7a4e717882" />
 
 
 ```	Application deployed in Nginx returns an error of connection refused. How to fix it ```
