@@ -48,7 +48,8 @@ Hotfix branch—when there is issue in production then the hot fix branch is cre
 ```	3 challenges that you faced with Git in your work experience ```
 
 1.Git branching strategy-
- 
+ <img width="975" height="291" alt="image" src="https://github.com/user-attachments/assets/71e3f223-a388-4725-b373-155cfabc018f" />
+
 2.Access control— In an ideal scenario, we need to decide: 
 •	Who has read access
 •	Who has write access--- in write access also Who can do the code push, who can create branches?
@@ -73,7 +74,8 @@ for all the repositories.
 
 When one of the developers made a change in the main branch, and if another developer working on the branch made the other change. When merging the change, you will get an error like there is a merge conflict.
 Avoid this much conflict. Like, we need to come and get with the developers that there is a much conflict in the code. Can you please check and resolve it. If it is with me that much conflict, I will sit with the other DevOps engineer and resolve.
- 
+ **<img width="682" height="240" alt="image" src="https://github.com/user-attachments/assets/5e927de0-7441-484b-b887-128fb14f0593" />
+**
 
 ```	Explain our and their merge strategies? ```
 
@@ -81,13 +83,15 @@ When we get merge Conflicts there are our and theirs
 Accept the current change is ours and accept the incoming change is theres sometimes we will accept both in rare cases
 
 Idea case is communicate with developers and resolve it.
- 
+ <img width="625" height="210" alt="image" src="https://github.com/user-attachments/assets/15dcfe21-e894-4cda-95b5-3adabacedb14" />
+
 
 
 ```	Have you ever used Git tags? If yes, explain how? ```
 
 Git tags are specific points in your git history typically to label the releases or bookmarks of a specific tag in your Git history.
- 
+ <img width="713" height="363" alt="image" src="https://github.com/user-attachments/assets/7fb304ff-76f2-4f05-8b1f-14968c97bdf7" />
+
 
 ```	How do you combine multiple commits into a single commit ```
 
@@ -110,7 +114,8 @@ git rebase -i HEAD~3 – last 3 commits were combined in to 1 commit we need pic
 
 .gitignore is file that tells git which files or folders to ignore so we don’t accidentally push the secrets, logs, build artifacts.
 Vim. gitignore
- 
+ <img width="269" height="214" alt="image" src="https://github.com/user-attachments/assets/5da6973d-92ee-47a1-977b-7d3f00246518" />
+
 
 ``` What is the purpose of a.git folder in git repository? ```
 
