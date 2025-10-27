@@ -1,4 +1,4 @@
-'''Git Clone vs Git For'''
+``` Git Clone vs Git For ```
 •	git fork creates a copy of a repository on GitHub (or GitLab, etc.) account, allowing us for changes without write access to the original repo.
 •	git clone creates a local copy of any Git repository (your own or someone else’s) on your machine for development.
 Here’s how you’d typically use both:
