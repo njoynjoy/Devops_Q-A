@@ -12,6 +12,7 @@ chmod/chown: for changing permission and right people having the permission
 scp/rsync: to copy the files from my local linux machine to cloud instance
 find: to locate particular file in the directory 
 su - : switch user 
+to connect to the other server : ssh username@hostname    password:
 
 ```	You lost a PEM file, how could you connect to the cloud instance? ```
 PEM file holds the private key for the cloud instance. And private key to the instances
