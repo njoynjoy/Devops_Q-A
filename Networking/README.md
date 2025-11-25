@@ -3,7 +3,7 @@ NETWORKING
 ```	What is DNS and why is it important? ```
 DNS is  like Internet Phone Book like we can’t  remember the ip address so for human readable domain names are created. Translates the ip address to human friendly domain name.
 
-```		Complete flow of OSI model
+``` Complete flow of OSI model ```
 When we are trying to access a website, suppose devopse.com, it will go to http or https, which is called the application layer (Layer 7).
 
 When we are using HTTPS, the encryption takes place through TLS or SSL. It is layer 6. Presentation layer 
