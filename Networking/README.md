@@ -3,18 +3,19 @@ NETWORKING
 ```	What is DNS and why is it important? ```
 DNS is  like Internet Phone Book like we can’t  remember the ip address so for human readable domain names are created. Translates the ip address to human friendly domain name.
 
-```	Complete flow of OSI model ```
+```		Complete flow of OSI model
 When we are trying to access a website, suppose devopse.com, it will go to http or https, which is called the application layer (Layer 7).
 
 When we are using HTTPS, the encryption takes place through TLS or SSL. It is layer 6. Presentation layer 
 If the request consists of cookies, cache, and the login information that will be taken care  layer 5 session layer
 Layers 5,6,7 are taken care of by the web browser.
-Our request is converted to packets in this layer called the Transport layer. Layer 4
-Servers ip address destination is added where the request is routed in layer 3 Network layer
-Mac address is added. Suppose the request is sent from your device, the mac address is added for the next hop and to router and similarly next hop is also added in layer 2 Data link layer
-Finally request travels through electrics, air, cables and finally reaches physical layer where destination this is physical layer layer 1
+Where data segmentation is happening and particular protocol like TCP/UPD is defined , If it is http then the TCP protocol is used, if it is DNS or others then UDP is used and they are standardized (Layer 4)
+called the Transport layer. Layer 4
+Servers ip address destination is added where the request is routed. Our request is converted to packets in this layer 3 Network layer
+When the data is moved to either net cables then the packets are converted into frames and Mac address is added. Suppose the request is sent from your device, the mac address is added for the next hop and to router and similarly next hop is also added in layer 2 Data link layer
+Here the data is transmitted into electronic signals Finally request travels through electrics, air, cables and finally reaches physical layer where destination this is physical layer layer 1
 
-
+<img width="975" height="559" alt="image" src="https://github.com/user-attachments/assets/a09ca914-790c-4371-8a19-1b5557e77d22" />
 
 
 
