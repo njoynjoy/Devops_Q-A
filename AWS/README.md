@@ -9,7 +9,7 @@ for the load balancer in the public subnet we will also grant access for it to t
 
 availability and scalability are achieved through auto-scaling group.
 
-	``` What is AWS NAT and when is it used? ```
+	``` What is AWS NAT and when is it used? ```
 NAT in AWS is network address translation
 we have a virtual machine deployed in private subnet,  where the back-end application is deployed and it needs to access the GitHub or internet. in this case, we use NAT.  we create NAT and we create a route which will have in the route table address of the destination that is 0.0.0/0 instead of pointing out to the internet it will point to the NAT. so when the request is sent from the backend application to the internet, first it will go to the NAT gateway. Then from NAT gateway it will go to the GitHub or the internet. 
 what NAT does here is when the packet reaches the Github. NAT source would be the NAT IP, not the Source IP of the application, and destination would be the internet or GitHub.
@@ -121,7 +121,7 @@ Example:  in eks pods are deployed in different nodes for an image processing ap
  <img width="395" height="222" alt="image" src="https://github.com/user-attachments/assets/9fe7d88e-797c-446a-9e41-51fede120840" />
 
 Advantage: highly scalable
-EBS: Elastic block storage: that is dedicated to a single Ec2 instance may be for high performance then we are looking for EBS
+EBS: Elastic block storage:Dedicated to a single Ec2 instance may be for high performance then we are looking for EBS
 Example: when working with databases where we need high performance and the volume is directly attached to the database instance so that we have high throughput and read and write operations then we use EBS, where the instance directly has access to the  block or storage 
 
 	``` Disable AWS console access to the IAM user? ```
